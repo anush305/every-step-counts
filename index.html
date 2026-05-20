@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>Every Single Step Counts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section id="banner">
+        <h1>Every Single Step Adds Up</h1>
+        <div class="info-btn-wrapper">
+            <button>
+                i
+            </button>
+            <div>Photo by <a
+                    href="https://unsplash.com/@unandalusgus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gustavo
+                    Quepóns</a> on <a
+                    href="https://unsplash.com/photos/sunflower-field-pF_2lrjWiJE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </div>
+        </div>
+
+    </section>
+    <section id="continual">
+        <h2>...when we are in it together</h2>
+        <div class="info-btn-wrapper">
+            <button>i</button>
+            <div>Photo by <a
+                    href="https://unsplash.com/@katertottz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Katie
+                    Rodriguez</a> on <a
+                    href="https://unsplash.com/photos/people-walking-on-street-during-daytime-Lh8BHb7UeDo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </div>
+        </div>
+    </section>
+    <section id="section3">
+        <p class="lead-hashtag">#TogetherWeCan</p>
+        <p class="continuation">...reduce our carbon footprint</p>
+        <div class="info-btn-wrapper">
+            <button>
+                i
+            </button>
+            <div>
+                Photo by <a
+                    href="https://unsplash.com/@karsten_wuerth?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Karsten
+                    Würth</a> on <a
+                    href="https://unsplash.com/photos/landscape-photography-of-grass-field-with-windmills-under-orange-sunset-lsJ9jHKIqHg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <strong id="year"></strong>
+    </footer>
+
+    <script>
+        let year = new Date().getFullYear();
+        document.querySelector('#year').innerText = year;
+        document.body.addEventListener('click', function (ev) {
+            if (ev.target.matches('button')) {
+                ev.target.nextElementSibling.style.display = 'block';
+            } else {
+                document.querySelectorAll('.info-btn-wrapper div').forEach(item => item.style.display = 'none');
+            }
+        });
+    </script>
+</body>
+
+</html>

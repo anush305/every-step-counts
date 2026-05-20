@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+section {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner h1 {
+    font-size: 3rem;
+    color: antiquewhite;
+    padding: 5%;
+    position: absolute;
+    z-index: 2;
+}
+
+@media(min-width: 1200px) {
+
+    #banner h1 {
+        font-size: 4.8rem;
+    }
+}
+
+#section3 {
+    background: #ccc url('section3.jpg') center;
+}
+
+.info-btn-wrapper button {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    background-color: rebeccapurple;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border: 0;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 700;
+    opacity: 0.5;
+}
+
+.info-btn-wrapper button:hover,
+.info-btn-wrapper button:focus {
+    opacity: 1;
+}
+
+.info-btn-wrapper div {
+    position: absolute;
+    right: 0.25rem;
+    bottom: 0.25rem;
+    background-color: #00000099;
+    color: white;
+    padding: 0.5rem;
+    max-width: 300px;
+    border-radius: 0.5rem;
+    display: none;
+}
+
+.info-btn-wrapper div a {
+    color: whitesmoke;
+}
+
+#continual h2 {
+    font-size: 3rem;
+    color: ivory;
+}
+
+#banner {
+    background-image: url('banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#banner::before,
+#continual::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+#continual {
+    background: #ccc url('activism.jpg') center no-repeat;
+}
+
+#continual h2 {
+    position: absolute;
+    z-index: 2;
+}
+
+.lead-hashtag {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.975rem;
+}
+
+footer {
+    background-color: black;
+    padding: 1rem;
+    text-align: center;
+    color: antiquewhite;
+}
