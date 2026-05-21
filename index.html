@@ -15,7 +15,7 @@
             <button>
                 i
             </button>
-            <div>Photo by <a
+            <div style="display:none;">Photo by <a
                     href="https://unsplash.com/@unandalusgus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gustavo
                     Quepóns</a> on <a
                     href="https://unsplash.com/photos/sunflower-field-pF_2lrjWiJE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -27,7 +27,7 @@
         <h2>...when we are in it together</h2>
         <div class="info-btn-wrapper">
             <button>i</button>
-            <div>Photo by <a
+            <div style="display: none;">Photo by <a
                     href="https://unsplash.com/@katertottz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Katie
                     Rodriguez</a> on <a
                     href="https://unsplash.com/photos/people-walking-on-street-during-daytime-Lh8BHb7UeDo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -41,7 +41,7 @@
             <button>
                 i
             </button>
-            <div>
+            <div style="display: none;">
                 Photo by <a
                     href="https://unsplash.com/@karsten_wuerth?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Karsten
                     Würth</a> on <a
@@ -57,7 +57,7 @@
         let year = new Date().getFullYear();
         document.querySelector('#year').innerText = year;
         document.body.addEventListener('click', function (ev) {
-            if (ev.target.matches('button')) {
+            if (ev.target.matches('button') && ev.target.nextElementSibling.style.display == 'none') {
                 ev.target.nextElementSibling.style.display = 'block';
             } else {
                 document.querySelectorAll('.info-btn-wrapper div').forEach(item => item.style.display = 'none');

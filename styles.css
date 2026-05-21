@@ -114,6 +114,11 @@ section {
     text-align: center;
     color: whitesmoke;
     font-size: 1.975rem;
+    font-weight: 600;
+}
+
+.continuation {
+    font-size: 1.45rem;
 }
 
 footer {
